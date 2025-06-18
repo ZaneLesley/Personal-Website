@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion'
+import introImage from '../../assets/IntroImage.jpg'
 
 export default function Introduction() {
     return (
@@ -31,7 +32,7 @@ export default function Introduction() {
             <div className="w-1/2">
                 <img
                     className="w-1/2"
-                    src="/src/assets/IntroImage.jpg"
+                    src={introImage}
                     alt="image"></img>
             </div>
         </motion.div>
