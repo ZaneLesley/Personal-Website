@@ -1,5 +1,7 @@
 import Header from './Header.tsx'
 import Loading from "./Loading.tsx";
+import Introduction from "./Introduction.tsx";
+import Footer from "./Footer.tsx";
 
 import {useEffect, useState} from "react";
 
@@ -9,7 +11,7 @@ export default function LandingPage() {
 
     // Artificial Loading
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 3000);
+        const timer = setTimeout(() => setIsLoading(false), 100);
         return () => clearTimeout(timer);
     }, [])
 
@@ -21,8 +23,9 @@ export default function LandingPage() {
                 </div>
             ) : (
                 <div className="flex flex-col min-w-screen min-h-screen justify-between items-center">
-                    <Header/><>
-                    {/* Add more content here */}</>
+                    <Header/>
+                    <Introduction/>
+                    <Footer></Footer>
                 </div>
             )}
         </>
