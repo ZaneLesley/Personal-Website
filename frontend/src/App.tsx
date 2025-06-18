@@ -1,10 +1,11 @@
 import './App.css'
+import LandingPage from "./pages/LandingPage/LandingPage.tsx";
 
 function App() {
 
     return (
         <>
-            <div>test</div>
+            <LandingPage></LandingPage>
         </>
     )
 }
