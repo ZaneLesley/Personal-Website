@@ -9,7 +9,8 @@ export default function Footer() {
                     <a href={"mailto:zanelesley@outlook.com"} target="_blank" rel="noopener noreferrer">
                         <Icon path={mdiEmailPlus} size={1.5}></Icon>
                     </a>
-                    <a href={"https://github.com/ZaneLesley/Weather-App"} target="_blank" rel="noopener noreferrer">
+                    <a href={"https://github.com/ZaneLesley/Personal-Website"} target="_blank"
+                       rel="noopener noreferrer">
                         <Icon path={mdiGithub} size={1.5}></Icon>
                     </a>
                 </div>

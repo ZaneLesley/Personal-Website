@@ -8,7 +8,7 @@ export default function Introduction() {
         >
             <div className="flex flex-col w-1/2">
                 <motion.h2
-                    className="text-3xl"
+                    className="text-3xl text-white"
                     initial={{opacity: 0, scale: 0.6}}
                     animate={{opacity: 1, scale: 1}}
                     transition={{duration: 0.8}}
@@ -16,7 +16,7 @@ export default function Introduction() {
                 </motion.h2>
 
                 <motion.h1
-                    className="text-6xl"
+                    className="text-6xl text-citrine"
                     initial={{opacity: 0, scale: 0.6}}
                     animate={{opacity: 1, scale: 1}}
                     transition={{

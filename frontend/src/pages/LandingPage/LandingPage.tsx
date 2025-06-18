@@ -1,9 +1,11 @@
+import {useEffect, useState} from "react";
+
 import Header from './Header.tsx'
 import Loading from "./Loading.tsx";
 import Introduction from "./Introduction.tsx";
 import Footer from "./Footer.tsx";
+import AboutMe from "./AboutMe.tsx";
 
-import {useEffect, useState} from "react";
 
 export default function LandingPage() {
     const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +27,7 @@ export default function LandingPage() {
                 <div className="flex flex-col min-w-screen min-h-screen justify-between items-center">
                     <Header/>
                     <Introduction/>
+                    <AboutMe></AboutMe>
                     <Footer></Footer>
                 </div>
             )}

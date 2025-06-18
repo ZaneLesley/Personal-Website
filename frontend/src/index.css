@@ -8,11 +8,32 @@
 
         color-scheme: light dark;
         color: rgba(255, 255, 255, 0.87);
-        background-color: #242424;
+        background-color: #0A1318ff;
 
         font-synthesis: none;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+
+    h2 {
+        @apply text-citrine mb-4;
+    }
+
+    h3 {
+        @apply text-citrine mb-4;
+    }
+
+    p {
+        @apply mb-4;
+    }
+
+}
+
+@theme {
+    --color-poppy: #db2b39ff;
+    --color-citrine: #dec62bff;
+    --color-indigo-dye: #184762ff;
+    --color-gunmetal: #192f3cff;
+    --color-background: #0a1318ff;
 }
