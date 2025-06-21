@@ -13,7 +13,7 @@ export default function LandingPage() {
 
     // Artificial Loading
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 0);
+        const timer = setTimeout(() => setIsLoading(false), 100);
         return () => clearTimeout(timer);
     }, [])
 

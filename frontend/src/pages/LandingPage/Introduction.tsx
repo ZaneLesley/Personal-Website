@@ -3,7 +3,7 @@ import introImage from '../../assets/IntroImage.jpg'
 
 export default function Introduction() {
     return (
-        <motion.div
+        <div
             className="flex flex-row w-full justify-center items-center"
         >
             <div className="flex flex-col w-1/2">
@@ -30,11 +30,16 @@ export default function Introduction() {
                 </motion.h1>
             </div>
             <div className="w-1/2">
-                <img
+                <motion.img
                     className="w-1/2"
                     src={introImage}
-                    alt="image"></img>
+                    alt="image"
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 7}}
+                >
+                </motion.img>
             </div>
-        </motion.div>
+        </div>
     )
 }
