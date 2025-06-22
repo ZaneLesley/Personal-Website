@@ -1,12 +1,27 @@
 import {techLogos} from "../../utils/techLogos.ts";
-
+import {motion} from "framer-motion";
 import ProjectCard from "./ProjectCard.tsx";
+
 
 export default function Projects() {
     return (
-        <div className="w-full flex flex-col justify-around items-center gap-8">
+        <motion.div
+            className="w-full flex flex-col justify-around items-center gap-8"
+        >
             <h2 className="w-1/2 text-4xl m-4">Projects</h2>
-            <div className="w-full flex flex-row justify-center gap-16">
+            <motion.div
+                className="w-full flex flex-row justify-center gap-16"
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true}}
+                variants={{
+                    show: {
+                        transition: {
+                            staggerChildren: 0.05
+                        }
+                    }
+                }}
+            >
                 <ProjectCard
                     title="Pentale"
                     description="This project is a Wordle-inspired guessing game themed around League of Legends esports, created out
@@ -51,8 +66,21 @@ export default function Projects() {
                         {src: techLogos.nginx, url: "https://nginx.org/", alt: "nginx logo"},
                     ]}
                 ></ProjectCard>
-            </div>
-            <div className="w-full flex flex-row justify-center gap-16">
+            </motion.div>
+            <motion.div
+                className="w-full flex flex-row justify-center gap-16"
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true}}
+                variants={{
+                    show: {
+                        transition: {
+                            staggerChildren: 0.05,
+                            delayChildren: 0.15
+                        }
+                    }
+                }}
+            >
                 <ProjectCard
                     title="NCATrak Mock System"
                     description="Developed a full-stack Flask application for the University of Oklahoma
@@ -90,7 +118,7 @@ export default function Projects() {
                         {src: techLogos.gradle, url: "https://gradle.org/", alt: "gradle logo"},
                     ]}
                 ></ProjectCard>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }

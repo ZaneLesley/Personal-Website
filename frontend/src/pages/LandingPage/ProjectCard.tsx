@@ -14,25 +14,32 @@ type Props = {
         }[]
 }
 
+const cardVariants = {
+    hidden: {opacity: 0, y: 20},
+    show: {opacity: 1, y: 0, transition: {duration: 1}},
+};
+
 export default function ProjectCard({title, description, linkURL, techStackItems}: Props) {
     return (
-        <motion.a
-            href={linkURL} rel="noopener noreferrer" target="_blank"
-            whileHover={{
-                scale: 1.05,
-                transition: {duration: 0.1}
-            }}
-        >
-            <div
-                className="w-120 flex flex-col justify-between h-full gap-8 p-2 bg-gunmetal/40 border-2 border-indigo-dye rounded-2xl">
-                <h4 className="text-2xl mt-2">{title}</h4>
-                <p>{description}</p>
-                <div className="w-full flex flex-row gap-2 ml-2">
-                    {techStackItems.map((item, idx) => (
-                        <TechStackItem key={idx} {...item} />
-                    ))}
+        <motion.div variants={cardVariants}>
+            <motion.a
+                href={linkURL} rel="noopener noreferrer" target="_blank"
+                whileHover={{
+                    scale: 1.05,
+                    transition: {duration: 0.1}
+                }}
+            >
+                <div
+                    className="w-120 flex flex-col justify-between h-full gap-8 p-2 bg-gunmetal/40 border-2 border-indigo-dye rounded-2xl">
+                    <h4 className="text-2xl mt-2">{title}</h4>
+                    <p>{description}</p>
+                    <div className="w-full flex flex-row gap-2 ml-2">
+                        {techStackItems.map((item, idx) => (
+                            <TechStackItem key={idx} {...item} />
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </motion.a>
+            </motion.a>
+        </motion.div>
     )
 }
