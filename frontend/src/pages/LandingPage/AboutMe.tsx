@@ -24,8 +24,8 @@ export default function AboutMe() {
     return (
         <motion.div
             className="w-full flex flex-col justify-center items-center text-center"
-            initial={{y: -50, opacity: 0}}
-            animate={{y: 0, opacity: 1}}
+            initial={{x: -50, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
             transition={{duration: 1.2, ease: "easeOut", delay: 1}}
         >
             <h2 className="w-1/2 text-4xl">About Me</h2>
