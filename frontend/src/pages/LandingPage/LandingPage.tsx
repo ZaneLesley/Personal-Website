@@ -4,7 +4,6 @@ import Header from './Header.tsx'
 import Loading from "./Loading.tsx";
 import Introduction from "./Introduction.tsx";
 import Footer from "./Footer.tsx";
-import AboutMe from "./AboutMe.tsx";
 import Projects from "./Projects.tsx";
 
 
@@ -28,7 +27,6 @@ export default function LandingPage() {
                 <div className="flex flex-col min-w-screen min-h-screen justify-between items-center">
                     <Header/>
                     <Introduction/>
-                    <AboutMe/>
                     <Projects/>
                     <Footer/>
                 </div>

@@ -9,7 +9,7 @@ const words = (text: string) =>
             initial={{opacity: 0, y: 10}}
             animate={{opacity: 1, y: 0}}
             transition={{
-                delay: 2 + (i * 0.05),
+                delay: 1 + (i * 0.04),
                 type: "spring",
                 bounce: 0,
                 duration: 0.6,
@@ -23,13 +23,12 @@ const words = (text: string) =>
 export default function AboutMe() {
     return (
         <motion.div
-            className="w-full flex flex-col justify-center items-center text-center"
-            initial={{x: -50, opacity: 0}}
+            className="w-full flex flex-col justify-center items-center mb-16 text-center"
+            initial={{x: -25, opacity: 0}}
             animate={{x: 0, opacity: 1}}
-            transition={{duration: 1.2, ease: "easeOut", delay: 1}}
+            transition={{duration: 0.5, ease: "easeOut", delay: 0.5}}
         >
-            <h2 className="w-1/2 text-4xl">About Me</h2>
-            <p className="w-1/2">Hello, I'm Zane Lesley</p>
+            <h2 className="w-1/2 text-4xl m-4">About Me</h2>
             <h3 className="w-1/4 text-2xl">Full Stack Developer</h3>
             <p className="w-1/2">
                 {words(
