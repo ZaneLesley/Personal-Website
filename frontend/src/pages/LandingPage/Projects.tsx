@@ -14,13 +14,7 @@ export default function Projects() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                variants={{
-                    show: {
-                        transition: {
-                            staggerChildren: 0.05
-                        }
-                    }
-                }}
+                variants={{show: {transition: {staggerChildren: 0.05}}}}
             >
                 <ProjectCard
                     title="Pentale"

@@ -21,13 +21,13 @@ const cardVariants = {
 
 export default function ProjectCard({title, description, linkURL, techStackItems}: Props) {
     return (
-        <motion.div variants={cardVariants}>
-            <motion.a
+        <motion.div variants={cardVariants}
+                    whileHover={{
+                        scale: 1.05,
+                        transition: {duration: 0.1}
+                    }}>
+            <a
                 href={linkURL} rel="noopener noreferrer" target="_blank"
-                whileHover={{
-                    scale: 1.05,
-                    transition: {duration: 0.1}
-                }}
             >
                 <div
                     className="w-120 flex flex-col justify-between h-full gap-8 p-2 bg-gunmetal/40 border-2 border-indigo-dye rounded-2xl">
@@ -39,7 +39,7 @@ export default function ProjectCard({title, description, linkURL, techStackItems
                         ))}
                     </div>
                 </div>
-            </motion.a>
+            </a>
         </motion.div>
     )
 }
