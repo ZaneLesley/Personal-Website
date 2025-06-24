@@ -5,6 +5,7 @@ import Loading from "./Loading.tsx";
 import Introduction from "./Introduction.tsx";
 import Footer from "./Footer.tsx";
 import Projects from "./Projects.tsx";
+import Skills from "./Skills.tsx"
 
 
 export default function LandingPage() {
@@ -28,6 +29,7 @@ export default function LandingPage() {
                     <Header/>
                     <Introduction/>
                     <Projects/>
+                    <Skills></Skills>
                     <Footer/>
                 </div>
             )}
