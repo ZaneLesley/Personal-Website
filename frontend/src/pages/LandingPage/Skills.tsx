@@ -23,7 +23,7 @@ export default function Skills() {
                     </ul>
                 </div>
                 <div className="w-1/3">
-                    <h3 className="border-b-2 border-indigo-dye">Frameworks/Libraries</h3>
+                    <h3 className="border-b-2 border-indigo-dye text-wrap">Frameworks and Libraries</h3>
                     <ul>
                         <li>React</li>
                         <li>Framer Motion</li>
