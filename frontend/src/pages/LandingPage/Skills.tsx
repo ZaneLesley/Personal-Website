@@ -10,8 +10,8 @@ export default function Skills() {
             viewport={{once: true}}
         >
             <h2 className="w-1/2 text-4xl m-4">Skills</h2>
-            <div className="flex flex-row justify-center w-1/2 gap-20 sm:gap-80">
-                <div className="w-1/3">
+            <div className="flex flex-row justify-center w-2/3 gap-20 lg:gap-65">
+                <div>
                     <h3 className="border-b-2 border-indigo-dye">Languages</h3>
                     <ul>
                         <li>Python</li>
@@ -22,11 +22,11 @@ export default function Skills() {
                         <li>SQL</li>
                     </ul>
                 </div>
-                <div className="w-1/3">
+                <div>
                     <h3 className="border-b-2 border-indigo-dye text-wrap">Frameworks and Libraries</h3>
                     <ul>
                         <li>React</li>
-                        <li>Framer Motion</li>
+                        <li>Motion</li>
                         <li>Prisma</li>
                         <li>Express.js</li>
                         <li>TanStack Query</li>
@@ -34,7 +34,7 @@ export default function Skills() {
                         <li>Flask</li>
                     </ul>
                 </div>
-                <div className="w-1/3">
+                <div>
                     <h3 className="border-b-2 border-indigo-dye">Tools</h3>
                     <ul>
                         <li>Docker</li>
@@ -43,9 +43,6 @@ export default function Skills() {
                         <li>GitHub</li>
                         <li>Postgres</li>
                         <li>Anaconda</li>
-                        <li>Vite</li>
-                        <li>Linux</li>
-                        <li>VPS</li>
                         <li>Cloudflare</li>
                     </ul>
                 </div>

@@ -10,7 +10,7 @@ export default function Projects() {
         >
             <h2 className="w-1/2 text-4xl m-4">Projects</h2>
             <motion.div
-                className="w-full flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-16"
+                className="w-full flex flex-col lg:flex-row flex-wrap justify-center items-center lg:items-stretch gap-16"
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
@@ -62,7 +62,7 @@ export default function Projects() {
                 ></ProjectCard>
             </motion.div>
             <motion.div
-                className="w-full flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-16"
+                className="w-full flex flex-col lg:flex-row flex-wrap justify-center items-center lg:items-stretch gap-16"
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}

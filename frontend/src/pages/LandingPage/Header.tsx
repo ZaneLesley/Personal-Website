@@ -4,10 +4,10 @@ import Icon from "@mdi/react";
 export default function Header() {
     return (
         <div
-            className="w-full flex sm:flex-row flex-col justify-around items-center bg-gunmetal border-b-2 border-indigo-dye mb-4">
-            <div className="w-1/6 sm:p-4"></div>
+            className="w-full flex lg:flex-row flex-col justify-around items-center bg-gunmetal border-b-2 border-indigo-dye mb-4">
+            <div className="w-1/6 lg:p-4"></div>
             <div className="w-full"></div>
-            <div className="w-1/6 flex flex-row justify-center p-4 gap-8 sm:border-l-2 border-indigo-dye">
+            <div className="w-1/6 flex flex-row justify-center p-4 gap-8 lg:border-l-2 border-indigo-dye mr-4">
                 <a href="https://github.com/ZaneLesley" rel="noreferrer noopener" target="_blank">
                     <Icon path={mdiGithub} size={1.5}></Icon></a>
                 <a href="https://www.linkedin.com/in/zanelesley/" rel="noreferrer noopener" target="_blank">

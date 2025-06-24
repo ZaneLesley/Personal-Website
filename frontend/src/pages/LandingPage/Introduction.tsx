@@ -1,15 +1,15 @@
 import {motion} from 'framer-motion'
-import introImage from '../../assets/IntroImage.jpg'
 import AboutMe from "./AboutMe.tsx";
+import introImage from '../../assets/IntroImage.png'
 
 export default function Introduction() {
     return (
-        <div className="w-full flex flex-col sm:min-h-screen justify-around">
+        <div className="w-full flex flex-col min-h-screen justify-around items-center">
 
             <div
-                className="flex sm:flex-row flex-col w-full min-h-screen sm:min-h-0 sm:justify-center justify-around"
+                className="flex flex-col w-11/12 md:w-1/2 md:min-h-0 min-h-screen justify-start  lg:mt-0 lg:justify-around items-center md:gap-7"
             >
-                <div className="flex flex-col sm:w-1/2">
+                <div className="flex flex-col lg:w-full">
                     <motion.h2
                         className="text-3xl text-white"
                         initial={{opacity: 0, scale: 0.6}}
@@ -19,7 +19,7 @@ export default function Introduction() {
                     </motion.h2>
 
                     <motion.h1
-                        className="text-6xl text-citrine"
+                        className="text-6xl text-citrine font-bold"
                         initial={{opacity: 0, scale: 0.6}}
                         animate={{opacity: 1, scale: 1}}
                         transition={{
@@ -32,9 +32,9 @@ export default function Introduction() {
                         Zane Lesley
                     </motion.h1>
                 </div>
-                <div className="sm:w-1/2">
+                <div className="w-full max-w-100 mt-30 lg:mt-0 mb-15 lg:mb-0">
                     <motion.img
-                        className="sm:w-1/2"
+                        className="rounded-full border-2 border-indigo-dye"
                         src={introImage}
                         alt="image"
                         initial={{opacity: 0}}
