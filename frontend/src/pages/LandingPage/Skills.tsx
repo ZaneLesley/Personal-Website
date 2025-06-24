@@ -45,7 +45,7 @@ export default function Skills() {
                         <li>Anaconda</li>
                         <li>Vite</li>
                         <li>Linux</li>
-                        <li>Virtual Private Server</li>
+                        <li>VPS</li>
                         <li>Cloudflare</li>
                     </ul>
                 </div>
