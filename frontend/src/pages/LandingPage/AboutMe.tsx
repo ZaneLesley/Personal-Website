@@ -29,8 +29,8 @@ export default function AboutMe() {
             transition={{duration: 0.5, ease: "easeOut", delay: 0.5}}
         >
             <h2 className="w-1/2 text-4xl m-4">About Me</h2>
-            <h3 className="w-1/4 text-2xl">Full Stack Developer</h3>
-            <p className="w-1/2">
+            <h3 className="sm:w-1/4 text-2xl">Full Stack Developer</h3>
+            <p className="sm:w-1/2 p-4 sm:p-0">
                 {words(
                     "I'm a Computer Science graduate from the University of Oklahoma and a passionate full-stack " +
                     "developer. I enjoy constantly learning, building, and refining my skills. " +

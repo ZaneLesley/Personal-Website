@@ -4,12 +4,12 @@ import AboutMe from "./AboutMe.tsx";
 
 export default function Introduction() {
     return (
-        <div className="w-full flex flex-col min-h-screen justify-around">
+        <div className="w-full flex flex-col sm:min-h-screen justify-around">
 
             <div
-                className="flex flex-row w-full justify-center items-center"
+                className="flex sm:flex-row flex-col w-full min-h-screen sm:min-h-0 sm:justify-center justify-around"
             >
-                <div className="flex flex-col w-1/2">
+                <div className="flex flex-col sm:w-1/2">
                     <motion.h2
                         className="text-3xl text-white"
                         initial={{opacity: 0, scale: 0.6}}
@@ -32,9 +32,9 @@ export default function Introduction() {
                         Zane Lesley
                     </motion.h1>
                 </div>
-                <div className="w-1/2">
+                <div className="sm:w-1/2">
                     <motion.img
-                        className="w-1/2"
+                        className="sm:w-1/2"
                         src={introImage}
                         alt="image"
                         initial={{opacity: 0}}
